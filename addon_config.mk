@@ -70,6 +70,10 @@ linux64:
 	# libraries need to passed to the linker in a specific order 
 	#nothing yet
 	
+	ADDON_LDFLAGS = -lssl -lcrypto
+	ADDON_SOURCES_EXCLUDE = libs/libwebsockets/include/linux64/%
+	ADDON_LIBS = libs/libwebsockets/lib/linux64/libwebsockets.a
+	
 linux:
 	#nothing yet
 	
